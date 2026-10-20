@@ -9,7 +9,7 @@ public class MovieTicketKiosk {
         String customerName = "Maya";
         String dayOfWeek = "Tuesday";
         int age = 34;
-        int ticketCount =3;
+        int ticketCount = 3;
         boolean isMember = true;
 
         // Prices
@@ -27,17 +27,5 @@ public class MovieTicketKiosk {
         System.out.println("Subtotal: " + subtotal);
         System.out.println("Total: " + total);
 
-        Scanner in = new Scanner(System.in);
-        System.out.println("enter your name");
-        String name = in.next();
-        System.out.println(name);
-        double retu = print(basePrice);
-        System.out.println(retu + "MAin");
-
-
-    }
-    public static double print (double namee){
-        System.out.println(namee);
-    return namee;
     }
 }
