@@ -1,5 +1,7 @@
 package com.pluralsight;
 
+import java.util.Scanner;
+
 public class MovieTicketKiosk {
     public static void main(String[] args) {
         System.out.println("====> Welcome to the movie Ticket kiosk! <====");
@@ -15,11 +17,27 @@ public class MovieTicketKiosk {
         double dayDiscount = 3.00;
         final double SERVICE_FEE = 1.50;
 
-        // Check the Values
-        System.out.println("customer: " + customerName);
-        System.out.println("Tickets: " + ticketCount);
-        System.out.println("Member: " + isMember);
-        System.out.println("Base price: " + basePrice);
+        // price per ticket after the day discount
+        double ticketPrice = basePrice - dayDiscount;
+        double subtotal = ticketPrice * ticketCount;
+        double memberDiscount = 0.00;
+        double total = subtotal - memberDiscount + SERVICE_FEE;
 
+        System.out.println("Ticket price: " + ticketPrice);
+        System.out.println("Subtotal: " + subtotal);
+        System.out.println("Total: " + total);
+
+        Scanner in = new Scanner(System.in);
+        System.out.println("enter your name");
+        String name = in.next();
+        System.out.println(name);
+        double retu = print(basePrice);
+        System.out.println(retu + "MAin");
+
+
+    }
+    public static double print (double namee){
+        System.out.println(namee);
+    return namee;
     }
 }
